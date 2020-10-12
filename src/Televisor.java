@@ -1,16 +1,16 @@
 public class Televisor {
-    String status;
+    private boolean status; //true --> turn on; false --> turn off
 
     Televisor(){
         turnOff();
     }
 
     void turnOn(){
-        this.status = "on";
+        this.status = true;
     }
 
     void turnOff(){
-        this.status = "off";
+        this.status = false;
     }
 
     void showStatus(){
